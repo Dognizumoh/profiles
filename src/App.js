@@ -6,16 +6,16 @@ function App(){
     <h1> Writers Profile</h1>
     <div className="container"> 
     {
-      Writers.map((writers)=>(
-        <div key={writers.id} className="card">
-        <img src={`images/${writers.avatar}.png`}
+      Writers.map((writer)=>(
+        <div key={writer.id} className="card">
+        <img src={`images/${writer.avatar}.png`}
         height = '300px'
-        width = '300px' alt={writers.img}
+        width = '300px' alt={writer.img}
         />
         <div className="textGroup">
-        <h3>{writers.name}</h3>
-        <p>{writers.email}</p>
-        <p>{writers.phone}</p>
+        <h3>{writer.name}</h3>
+        <p>{writer.email}</p>
+        <p>{writer.phone}</p>
         
         </div>
         
